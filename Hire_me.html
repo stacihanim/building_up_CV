@@ -14,22 +14,22 @@
     <section>
         <table border="1" cellspacing="0" cellpadding="5px">
             <tr>
-                <td>
+                <th>
                     <strong>
                         Phone
                     </strong>
-                </td>
+                </th>
                 <td>
                     +380961234567
                 </td>
             </tr>
 
             <tr>
-                <td>
+                <th>
                     <strong>
                         Address
                     </strong>
-                </td>
+                </th>
                 <td>
                     Odesa, Ukraine
                 </td>
@@ -48,9 +48,9 @@
                 <table cellspacing="0" cellpadding="3px">
                     
                     <tr>
-                        <td>
+                        <th align="left">
                             <label for="email">Email <span style="color: orangered;">*</span>:</label>
-                        </td>
+                        </th>
                         
                         <td>
                             <input type="email" id="email" name="email" required size="35" maxlength="64"/>
@@ -58,9 +58,9 @@
                     </tr>
                     
                     <tr valign="top">
-                        <td>
+                        <th>
                             <label for="description">Description:</label>
-                        </td>
+                        </th>
                     
                         <td >
                             <textarea name="description" id="description" cols="30" rows="8"></textarea>
@@ -68,17 +68,18 @@
                     </tr>
 
                     <tr>
-                        <td>
+                        <th align="left">
                             <label for="work-type">Work type:</label>
-                        </td>
+                        </th>
                 
                         <td>
-                            <select name="type">
+                            <select name="type" id="work-type">
                                 <option value="in-office">In-Office</option>
                                 <option value="remote">Remote</option>
                                 <option value="one-time-project">One-time Project</option>
                             </select>
                         </td>
+                    
                     </tr>
 
                 </table>
