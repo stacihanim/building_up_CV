@@ -17,12 +17,10 @@ th {
 
 .link {
     color: #00f;
-    text-decoration: underline;
 }
 
 .link:visited {
     color: #005;
-    text-decoration: underline;
 }
 
 .link:hover {
