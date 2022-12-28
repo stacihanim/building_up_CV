@@ -17,6 +17,8 @@ th {
 
 .link {
     color: #00f;
+    display: block;
+    margin-bottom: 10px;
 }
 
 .link:visited {
@@ -30,3 +32,21 @@ th {
 .item_skills {
     list-style-type: square;
 }
+
+.border {
+    border-bottom: 2px solid #559ee8;
+}
+
+.photo {
+    border: 2px solid #559ee8;
+    padding: 10px;
+}
+
+.table-title {
+    background-color: #9cb1c6;
+}
+
+td {
+    background-color: #c4dbf2;
+}
+
