@@ -5,30 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hire Me Form</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="hire_body">
     <main>
-        <h2>Hire me</h2>
-        <h3>Contact information</h3>
+        <h2 class="hire_h2">Hire me</h2>
+        <h3 class="hire_h3">Contact information</h3>
 
     <section>
-        <table border="1" cellspacing="0" cellpadding="5px">
+        <table class="hire_table">
+            <!-- border="1" cellspacing="0" cellpadding="5px" -->
             <tr>
                 <th>
-                    <strong>
-                        Phone
-                    </strong>
+                    Phone
+                    
                 </th>
                 <td>
-                    +380961234567
+                    +38056455567
                 </td>
             </tr>
 
             <tr>
                 <th>
-                    <strong>
                         Address
-                    </strong>
                 </th>
                 <td>
                     Odesa, Ukraine
@@ -45,19 +49,19 @@
         <form action="/Hire_me.html" method="get">
             <fieldset>
                 <legend>Contact Form</legend>
-                <table cellspacing="0" cellpadding="3px">
-                    
+                <table class="contact_table">
                     <tr>
-                        <th align="left">
-                            <label for="email">Email <span style="color: orangered;">*</span>:</label>
+                        <th>
+                            <label for="email">Email <span class="asterisk">*</span>:</label>
                         </th>
                         
                         <td>
                             <input type="email" id="email" name="email" required size="35" maxlength="64"/>
+                            <div class="error">Enter your email</div>
                         </td>
                     </tr>
                     
-                    <tr valign="top">
+                    <tr>
                         <th>
                             <label for="description">Description:</label>
                         </th>
@@ -68,7 +72,7 @@
                     </tr>
 
                     <tr>
-                        <th align="left">
+                        <th>
                             <label for="work-type">Work type:</label>
                         </th>
                 
