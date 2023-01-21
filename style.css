@@ -1,54 +1,298 @@
-* {
-    color: #333;
-    font-family: Arial, Helvetica, sans-serif;
+/* #1 CV styles */
+
+.body_cv {
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Inter', sans-serif;
+    border: 1px solid black;
+    font-weight: 600;
+    margin: 0 auto;
+
 }
 
-.header_box {
-    display: flex;
-    justify-content: space-between;
+.primary {
+    width: 385px; 
+    background-color: #86A3B4;
+    border-right: 1px solid black;
     
 }
 
+.secondary {
+    width: calc(1200px - 385px);
+    padding-left: 55px;
+    padding-right: 54px;
+    
+}
+
+
 .photo {
-    border: 2px solid #559ee8;
-    padding: 10px;
-    width: 100px;
-    height: 100px;
+    width: 385px;
+    height: 292px;
     object-fit: cover;
+    object-position: 0% 40%;
 }
 
-.my_name {
-    font-style: italic;
-    font-size: 2rem;
+.headlines {
+    font-size: 36px;
+    color: #1E1E1E;
+    padding-bottom: 28px;
+    border-bottom: 5px solid #000000;
+    
 }
 
-.job_position {
-    font-weight: bold;
+.headline_name {
+    font-size: 40px;
+    padding-left: 40px;
+    margin-bottom: 16px; 
 }
 
-.border {
-    border-bottom: 2px solid #559ee8;
+.first_name {
+    color: #FFFFFF;
+
 }
 
-.table_experience {
-    width: 100vw;
+.last_name {
+    color: #1C2E8C;
+
 }
 
-th {
-    text-transform: uppercase;
+.offer_link {
+    display: inline-block;
+    text-shadow: #1C2E8C 1px 0 10px;
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 5px;
+    margin-left: 40px;
+    margin-bottom: 10px;
 }
 
 
-.item_skills {
-    list-style-type: square;
+.offer_link:hover {
+    text-shadow: #fc0 1px 0 10px;
 }
 
 
-.table-title {
-    background-color: #9cb1c6;
+article .headlines {
+    font-size: 32px;
+    color: #263036;
 }
 
-td {
-    background-color: #c4dbf2;
+.text {
+    font-size: 16px;
+    color: #263036;
 }
 
+.contact, .lang {
+    padding-left: 40px;
+    padding-right: 52px;
+}
+
+.primary .headlines {
+    padding-bottom: 15px;
+}
+
+.table_head {
+    font-size: 24px;
+    color: #263036;
+    margin-bottom: 11px;
+    
+}
+.table .text {
+    margin: 0;
+}
+
+.lang_list {
+    padding-left: 0;
+    list-style-type: none;
+}
+.lang_list li {
+    padding-bottom: 15px;
+}
+
+.cell_link, .cell_link:visited {
+    color: #1C2E8C;
+    text-decoration: none;
+}
+.cell_link:hover {
+    cursor: pointer;
+}
+
+.text_info {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.work_position_1 {
+    margin-top: 31px;
+    margin-bottom: 0;
+}
+
+.work_position_2 {
+    margin-top: 15px;
+}
+
+
+
+
+
+
+/* #2 Hire_me.html styles  */
+
+.hire_body {
+    margin: 0 auto;
+    max-width: 1024px;
+    font-family: 'Inter', sans-serif;
+    
+}
+
+
+.hire_h2 {
+    font-size: 32px;
+}
+
+/* Contact info table  */
+
+.hire_h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.hire_table {
+    border-collapse: collapse;
+    
+}
+
+.hire_table th {
+    font-weight: 600;
+}
+
+.hire_table th, 
+.hire_table td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+
+
+/* Contact Form */
+
+legend {
+    font-weight: 600;
+}
+
+.contact_table {
+    padding-top: 7px;
+}
+
+.contact_table tr {
+    vertical-align: top;
+    text-align: left;
+}
+
+.contact_table th,
+.contact_table td {
+    padding-bottom: 15px;
+    padding-right: 4px;
+}
+
+.contact_table label {
+    font-weight: 600;
+}
+
+.asterisk {
+    color: #ED0131;
+}
+.error {
+    display: none;
+    color: #ED0131;
+    font-size: 12px;
+    font-weight: 100;
+    line-height: 2;
+}
+
+
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 400;
+  appearance: none;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  border: none; 
+}
+
+
+
+input[type=email],
+textarea, 
+select {
+    width: 460px;
+    padding: 5px;
+    background-color: #F8FAFC;
+    border-radius: 4px;
+    color: #3B4256;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+input[type=email]:hover,
+textarea:hover,
+select:hover {
+    border: 1px solid #0048D9;
+    color: #3B4256;
+} 
+input[type=email]:hover:invalid {
+    border: 1px solid #ED0131;
+}
+
+input[type="email"]:invalid + .error {
+    display: block;
+}
+ 
+
+textarea {
+    max-height: 164px;
+}
+
+select[name=type] {
+    width: 470px;
+    background: url('./Vector.svg') no-repeat center right .75rem;;
+    color: #B8BCCA;
+    letter-spacing: 0.01em;
+    background-color: #F8FAFC;
+
+}
+
+select[name=type]:focus {
+    color: #3B4256;
+}
+
+/* Submit button */
+
+input[type=submit] {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #0048D9;
+    color: #FFFFFF;
+    border-radius: 6px;
+    padding: 4px 16px 4px 16px;
+}
+
+
+input[type=submit]:hover {
+    background-color: #002266;
+    cursor: pointer;
+    border: none;
+}
+
+
+
+input[type=submit]:disabled {
+    background: rgba(0, 72, 217, 0.45);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
