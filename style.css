@@ -8,6 +8,7 @@
     border: 1px solid black;
     font-weight: 600;
     margin: 0 auto;
+    box-sizing: border-box;
 
 }
 
@@ -15,14 +16,17 @@
     width: 385px; 
     background-color: #86A3B4;
     border-right: 1px solid black;
-    
+    position: sticky;
+    top: 0;
+   overflow: auto;
 }
+
 
 .secondary {
     width: calc(1200px - 385px);
     padding-left: 55px;
     padding-right: 54px;
-    
+    /* position: relative; */
 }
 
 
@@ -137,12 +141,15 @@ article .headlines {
 
 
 
-/* #2 Hire_me.html styles  */
+/* #2 hire_me.html styles  */
 
 .hire_body {
-    margin: 0 auto;
     max-width: 1024px;
     font-family: 'Inter', sans-serif;
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     
 }
 
