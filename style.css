@@ -18,7 +18,7 @@
 
 
 .body_cv {
-    width: 1200px;
+    max-width: 1200px;
     display: flex;
     flex-direction: row;
     font-family: 'Inter', sans-serif;
@@ -31,17 +31,17 @@
 
 
 .primary {
-    width: 385px; 
+    
     background-color: var(--color-main-primary);
     border-right: 1px solid var(--color-border);
-    position: sticky;
+    /* position: sticky;
     top: 0;
-    overflow: auto;
+    overflow: auto; */
 }
 
 
 .secondary {
-    width: calc(1200px - 385px);
+    max-width: calc(100vw - 385px);
     padding-left: var(--padding-second-section);
     padding-right: var(--padding-second-section);
 }
@@ -159,7 +159,18 @@ p {
     margin-top: 15px;
 }
 
+ @media screen and (max-width: 400px) {
+    .body_cv {
+        display: flex;
+        flex-direction: column;
+       
 
+    }
+
+    .secondary {
+        max-width: none;
+    }
+}
 
 
 
@@ -257,7 +268,7 @@ textarea {
 
 
 
-input[type=email],
+input[type="email"],
 textarea, 
 select {
     width: 460px;
@@ -268,13 +279,13 @@ select {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-input[type=email]:hover,
+input[type="email"]:hover,
 textarea:hover,
 select:hover {
     border: 1px solid #0048D9;
     color: #3B4256;
 } 
-input[type=email]:hover:invalid {
+input[type="email"]:hover:invalid {
     border: 1px solid #ED0131;
 }
 
@@ -287,7 +298,7 @@ textarea {
     max-height: 164px;
 }
 
-select[name=type] {
+select[name="type"] {
     width: 470px;
     background: url('./Vector.svg') no-repeat center right .75rem;;
     color: #B8BCCA;
@@ -296,13 +307,13 @@ select[name=type] {
 
 }
 
-select[name=type]:focus {
+select[name="type"]:focus {
     color: #3B4256;
 }
 
 /* Submit button */
 
-input[type=submit] {
+input[type="submit"] {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
@@ -313,7 +324,7 @@ input[type=submit] {
 }
 
 
-input[type=submit]:hover {
+input[type="submit"]:hover {
     background-color: #002266;
     cursor: pointer;
     border: none;
@@ -321,7 +332,7 @@ input[type=submit]:hover {
 
 
 
-input[type=submit]:disabled {
+input[type="submit"]:disabled {
     background: rgba(0, 72, 217, 0.45);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
