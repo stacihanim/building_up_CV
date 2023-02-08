@@ -1,0 +1,11 @@
+.my-theme {
+    /* colors */
+        --color-main-primary: #508991;
+        --color-main-secondary: #3fc8a1;
+        --color-main-tertiary: #000000;
+        --color-border: #272640;
+        --color-headlines: #0e7d5e;
+        --color-text: #032c30;
+        --color-highlight: #5577c5;
+    
+  }
